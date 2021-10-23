@@ -9,16 +9,20 @@
     <link href="{% static 'css/base.css' %}" rel="stylesheet" />
 
     <title>VinhDo's Django blog</title>
-  
-</head>
+  </head>
   <body>
-    <header>
-      <h1><a href="{% url 'home' %}">Django blog</a></h1>
-    </header>
-    <div class="post-entry nav-left">
-        {% block content %}
-
-        {% endblock content%}
+    <div>
+      <header>
+        <div class="nav-left">
+          <h1><a href="{% url 'home' %}">Django blog</a></h1>
+        </div>
+        <div class="nav-right">
+          <h1><a href="{% url 'post-new' %}">+ New Post</a></h1>
+        </div>
+      </header>
+      {% block content %}
+      
+      {% endblock content%}
     </div>
   </body>
 </html>
