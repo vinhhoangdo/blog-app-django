@@ -35,7 +35,7 @@ requests==2.26.0
 six==1.16.0
 soupsieve==2.2.1
 SQLAlchemy==1.4.23
-sqlparse==0.4.1
+sqlparse==0.4.2
 tornado==6.1
 urllib3==1.26.7
 virtualenv==20.8.1
